@@ -6,18 +6,18 @@ body {
 }
 
 .App-header {
-  background-color: #0d4ea5;
+  background-color: #c9cfdfff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #0d4ea5;
 }
 
 form {
-  background: #ccd3e1;
+  background: #7995c3;
   padding: 20px;
   border-radius: 10px;
   margin: 20px;
