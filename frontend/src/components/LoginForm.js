@@ -8,7 +8,10 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/login", { email, password });
+      const response = await axios.post(
+        "http://localhost:5001/api/auth/login",
+        { email, password }
+      );
       console.log("Login successful:", response.data);
     } catch (error) {
       console.error("Error logging in:", error);

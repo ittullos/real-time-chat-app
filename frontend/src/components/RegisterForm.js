@@ -13,7 +13,10 @@ const RegisterForm = () => {
       return;
     }
     try {
-      const response = await axios.post("/api/register", { email, password });
+      const response = await axios.post(
+        "http://localhost:5001/api/auth/register",
+        { email, password }
+      );
       console.log("Registration successful:", response.data);
     } catch (error) {
       console.error("Error registering:", error);
